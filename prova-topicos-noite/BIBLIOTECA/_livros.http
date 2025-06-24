@@ -1,0 +1,38 @@
+@base_url = http://localhost:5085/api
+
+POST  {{base_url}}/livros
+Content-Type: application/json
+
+{
+    "titulo": "Harry Porta",
+    "autor" : "jk rolas",
+    "categoriaId" : 2
+}
+
+
+
+###
+PUT {{base_url}}/livros/1
+Content-Type: application/json
+
+{
+    "titulo": "Harry Pora",
+    "autor" : "jk rolas",
+    "categoriaId" : 3
+}
+
+###
+GET  {{base_url}}/livros
+Content-Type: application/json
+
+###
+
+DELETE {{base_url}}/livros/1
+
+Content-Type: application/json
+
+{
+    "titulo": "Harry Pora",
+    "autor" : "jk rolas",
+    "categoriaId" : 3
+}
